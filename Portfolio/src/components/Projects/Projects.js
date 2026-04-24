@@ -2,12 +2,13 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
+import { FiExternalLink } from "react-icons/fi";
+import { BsGithub } from "react-icons/bs";
+import asean from "../../Assets/Projects/ai.certificate.png";
+import unoct from "../../Assets/Projects/unoct.png";
+import dlc from "../../Assets/Projects/dlc.png";
 import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import codeEditor from "../../Assets/Projects/codeEditor.png";
 
 function Projects() {
   return (
@@ -23,68 +24,61 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
+              imgPath={asean}
+              isBlog={false}
+              title="AI Ready ASEAN"
+              description="Successfully completed the 'Hour of Code' Training under the ASEAN Foundation, supported by Google.org, focusing on digital literacy and AI readiness."
+              ghLink="https://www.aseanfoundation.org/"
+              buttonText="View Program"
+              buttonIcon={<FiExternalLink />}
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={unoct}
+              isBlog={false}
+              title="UNOCT Initiative"
+              description="Co-authoring a regional manual for SE Asia on establishing safety protocols and community guidelines for gaming ecosystems."
+              ghLink="https://www.un.org/counterterrorism/en/events/call-young-gamers-help-build-safer-online-communities-violent-extremism-southeast-asia"
+              buttonText="View UN Initiative"
+              buttonIcon={<FiExternalLink />}
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={dlc}
+              isBlog={false}
+              title="DLC Program"
+              description="Pilot participant focused on educating moderators on PCVE and digital safety within online communities."
+              ghLink="https://www.dlcleadership.org"
+              buttonText="View Program"
+              buttonIcon={<FiExternalLink />}
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={codeEditor}
+              isBlog={false}
+              title="Student Login"
+              description="CPE Lab 3.3 focused on secure authentication and session logic."
+              ghLink="https://github.com/Knight8564/lab-3.3-"
+              buttonText="GitHub"
+              buttonIcon={<BsGithub />}
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
               imgPath={chatify}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={bitsOfCode}
-              isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={editor}
-              isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={leaf}
-              isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={suicide}
-              isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={emotion}
-              isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              title="Student Enrollment Portal"
+              description="CPE Lab 3.2 specialized in data management and enrollment forms."
+              ghLink="https://github.com/Knight8564/lab-2.3-dashboard"
+              buttonText="GitHub"
+              buttonIcon={<BsGithub />}
             />
           </Col>
         </Row>
@@ -94,3 +88,4 @@ function Projects() {
 }
 
 export default Projects;
+

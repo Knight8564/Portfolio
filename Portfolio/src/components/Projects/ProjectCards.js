@@ -3,6 +3,7 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
+import { FiExternalLink } from "react-icons/fi";
 
 function ProjectCards(props) {
   return (
@@ -13,9 +14,14 @@ function ProjectCards(props) {
         <Card.Text style={{ textAlign: "justify" }}>
           {props.description}
         </Card.Text>
-        <Button variant="primary" href={props.ghLink} target="_blank">
-          <BsGithub /> &nbsp;
-          {props.isBlog ? "Blog" : "GitHub"}
+        <Button 
+          variant="primary" 
+          href={props.ghLink} 
+          target="_blank"
+          style={{ backgroundColor: "#00f2ff", borderColor: "#00f2ff", color: "#000" }}
+        >
+          {props.buttonIcon ? props.buttonIcon : <BsGithub />} &nbsp;
+          {props.buttonText ? props.buttonText : (props.isBlog ? "Blog" : "GitHub")}
         </Button>
         {"\n"}
         {"\n"}
@@ -27,7 +33,7 @@ function ProjectCards(props) {
             variant="primary"
             href={props.demoLink}
             target="_blank"
-            style={{ marginLeft: "10px" }}
+            style={{ marginLeft: "10px", backgroundColor: "#00f2ff", borderColor: "#00f2ff", color: "#000" }}
           >
             <CgWebsite /> &nbsp;
             {"Demo"}

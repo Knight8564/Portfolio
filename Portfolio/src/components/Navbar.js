@@ -28,7 +28,7 @@ function NavBar() {
     >
       <Container>
         <Navbar.Brand href="/" className="d-flex">
-          <span style={{ color: "#00f2ff", fontWeight: 700, fontSize: "1.2rem" }}>JF.</span>
+          <span style={{ color: "#00FFFF", fontWeight: 700, fontSize: "1.2rem" }}>Bulacan</span>
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
