@@ -49,6 +49,27 @@ button:focus {
   display: none;
 } */
 
+/* --------- */
+/* Navbar Logo */
+/* --------- */
+.navbar .logo {
+  display: inline-block;
+  object-fit: contain;
+  aspect-ratio: auto;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.navbar .logo:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 12px #00FFFF) drop-shadow(0 0 25px rgba(0, 255, 255, 0.8)) !important;
+}
+
+/* Backup: Ready for portfolio-static.png */
+.navbar .logo.static {
+  /* Use this class if switching to static PNG */
+}
+
 #no-scroll {
   overflow: hidden;
   height: 100vh;
@@ -428,6 +449,38 @@ button:focus {
   text-align: center !important;
 }
 
+.footer-content {
+  padding: 1rem 2rem !important;
+  align-items: flex-start !important;
+}
+
+.footer-credits {
+  flex: 1;
+}
+
+.footer-credits p {
+  font-size: 0.8rem !important;
+  color: rgba(255, 255, 255, 0.7) !important;
+  margin: 0 !important;
+  font-weight: 400;
+}
+
+.footer-socials-section {
+  flex: 1;
+  text-align: right !important;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.socials-label {
+  font-size: 0.75rem !important;
+  color: rgba(0, 255, 255, 0.6) !important;
+  margin-bottom: 0.5rem !important;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
 .footer-body {
   z-index: 1;
   text-align: center !important;
@@ -436,6 +489,22 @@ button:focus {
 @media (max-width: 767px) {
   .footer-copywright {
     text-align: center !important;
+  }
+
+  .footer-content {
+    flex-direction: column !important;
+    align-items: center !important;
+    padding: 1rem !important;
+  }
+
+  .footer-credits {
+    text-align: center !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .footer-socials-section {
+    text-align: center !important;
+    align-items: center !important;
   }
 
   .footer-body {

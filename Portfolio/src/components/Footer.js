@@ -12,11 +12,12 @@ function Footer() {
   let year = date.getFullYear();
   return (
     <Container fluid className="footer">
-      <Row>
-        <Col md="8" className="footer-copywright">
-          <h3>Developed by John Frederick Bulacan | Template by Soumyajit Behera</h3>
+      <Row className="footer-content d-flex justify-content-between align-items-center">
+        <Col className="footer-credits">
+          <p>Developed by John Frederick Bulacan | Template by Soumyajit Behera</p>
         </Col>
-        <Col md="4" className="footer-body">
+        <Col className="footer-socials-section">
+          <div className="socials-label">Original Creator Socials</div>
           <ul className="footer-icons">
             <li className="social-icons">
               <a

@@ -4,6 +4,7 @@ import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import { Link } from "react-router-dom";
 import { AiOutlineHome, AiOutlineFundProjectionScreen, AiOutlineUser } from "react-icons/ai";
+import logo from "../Assets/portfolio-demo.gif";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -28,7 +29,19 @@ function NavBar() {
     >
       <Container>
         <Navbar.Brand href="/" className="d-flex">
-          <span style={{ color: "#00FFFF", fontWeight: 700, fontSize: "1.2rem" }}>Bulacan</span>
+          <img
+            src={logo}
+            alt="logo"
+            className="logo"
+            style={{
+              height: "40px",
+              objectFit: "contain",
+              aspectRatio: "auto",
+              filter: "drop-shadow(0 0 8px #00FFFF)",
+              cursor: "pointer",
+              transition: "all 0.3s ease"
+            }}
+          />
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"

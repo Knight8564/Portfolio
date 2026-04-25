@@ -78,3 +78,12 @@ You will find all the components used and you can edit your information accordin
 [![GitHub](https://img.shields.io/badge/GitHub-Knight8564-black?style=for-the-badge&logo=github)](https://github.com/Knight8564)
 
 Feel free to explore my projects and reach out for collaboration opportunities!
+
+## Credits & Acknowledgements
+
+This portfolio was built using a React template originally developed by [Soumyajit Behera](https://github.com/soumyajit4419). I have since customized the branding, expanded the project showcase, and updated the technical stack to reflect my own work as a Computer Engineering student at TIP Manila.
+
+**Special thanks to:**
+- **Soumyajit Behera** - Original template creator and inspiration
+- **Vercel** - Seamless deployment and hosting
+- **React Community** - Comprehensive documentation and support
